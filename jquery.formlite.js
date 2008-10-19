@@ -12,7 +12,7 @@ $.fn.formlite = function(options) {
         var data = $form.serialize();
         $.ajax({
             url:  opts.url,
-            type: opts.method,
+            type: opts.type,
             data: data,
             success: function(response) {
                 if (opts.target)
